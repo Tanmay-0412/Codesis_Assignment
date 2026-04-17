@@ -20,7 +20,7 @@ The implemented features are :-
 ## ⚡ How to Run Locally
 ```bash
 # Clone the repository
-git clone 
+git clone https://github.com/Tanmay-0412/Codesis_Assignment.git
 
 # Move into the project directory
 cd codesis_assignment
