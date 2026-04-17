@@ -4,6 +4,9 @@ A **modern, responsive, and interactive website** built with **React and Tailwin
 This project contains **2 main pages** – Home, UsersPage – each crafted with **smooth animations, clean layouts, and engaging UI design**.  
 
 ---
+## ⚡ Deployed on Live server with the help of Netlify
+- 🚀 [Codesis Assignment Live](https://codesisassigment.netlify.app/)
+
 
 ## 👤 User Dashboard
 
@@ -32,3 +35,4 @@ npm install
 npm run dev
 ```
 ---
+Thanks for checking my project!

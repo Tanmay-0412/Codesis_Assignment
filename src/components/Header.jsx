@@ -23,8 +23,8 @@ const Header = ({ search, setSearch, sortOrder, setSortOrder, showSearch = true 
           User Dashboard
         </h1>
 
-        
         {showSearch && (
+            <>
           <div className="relative w-140">
             <input
               className="border border-gray-600 rounded-xl pl-10 pr-3 py-1 focus:outline-none focus:ring-1 transition w-full"
@@ -44,9 +44,8 @@ const Header = ({ search, setSearch, sortOrder, setSortOrder, showSearch = true 
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
           </div>
-        )}
-
-        <div className="flex gap-2 items-center w-full sm:w-auto">
+       
+       
           <select
             className="border border-gray-600 rounded-xl px-2 py-1 focus:outline-none focus:ring-1 transition bg-transparent"
             value={sortOrder}
@@ -55,7 +54,10 @@ const Header = ({ search, setSearch, sortOrder, setSortOrder, showSearch = true 
             <option value="az">Sort: Name (A–Z)</option>
             <option value="za">Sort: Name (Z–A)</option>
           </select>
+          </>
+         )}
 
+         <div className="flex gap-2 items-center w-full sm:w-auto">
           <button
             className="text-black font-medium hover:text-black transition cursor-pointer"
             onClick={() => navigate("/user-listing")}
