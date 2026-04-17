@@ -1,7 +1,6 @@
 import React from "react";
 import { SkeletonCard } from "../ui/Skeleton";
 
-// Accept all state as props from App
 const UserPage = ({
   users,
   search,
@@ -14,7 +13,6 @@ const UserPage = ({
     user.name.toLowerCase().includes(search.toLowerCase()),
   );
 
-  // Sort users by name
   const sortedUsers = [...filteredUsers].sort((a, b) => {
     if (sortOrder === "az") {
       return a.name.localeCompare(b.name);
