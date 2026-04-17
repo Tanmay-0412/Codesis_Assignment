@@ -13,7 +13,7 @@ The **Home Page** consists of list of users.
 The implemented features are :-
 - **Debounced Search Input** .  
 - **Sorting Names Alphabetically** .
-- ⚡ **Mobile Responsive**.    
+- 📱 **Mobile Responsive**.    
 - **No Page Found** - if user routes to a different url, it has Page Not Found.  
 - **Deployed on netlify** - Temporarily deployed.   
 
