@@ -7,18 +7,25 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserListingPage from "./components/UserListingPage";
 
 const App = () => {
-
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("az");
   const [loading, setLoading] = useState(true);
 
   const fetchUser = async (URL) => {
-    setLoading(true);
-    const response = await fetch(URL);
-    const data = await response.json();
-    setUsers(data);
-    setLoading(false);
+    try {
+      setLoading(true);
+      const response = await fetch(URL);
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+      }
+      const data = await response.json();
+      setUsers(data);
+    } catch (error) {
+      console.error("Failed to fetch users:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
